@@ -146,7 +146,7 @@ function Login() {
           <div className="buttonsDiv">
           <button type='submit' className='form-button button-fancy -black' >
                 <span className="arrow"></span>
-                <span className="text">Sign Up</span>
+                <span className="text">Login</span>
               </button>
             <button className="blackHoverAni btnRegi">New user Registration <Icon icon="basil:edit-outline" /></button>
           </div>
