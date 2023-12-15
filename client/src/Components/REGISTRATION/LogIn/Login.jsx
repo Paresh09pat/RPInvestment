@@ -6,7 +6,7 @@ import eyeOffOutline from "@iconify/icons-mdi/eye-off-outline";
 import Keyboard from "react-simple-keyboard";
 import "react-simple-keyboard/build/css/index.css";
 import Captcha from "../LogIn/Captcha/Captcha";
-// 
+
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -123,16 +123,33 @@ function Login() {
             </div>
           </div>
 
+          <div className="main_remind_forgitPassDiv">
+            <div className="remindMecheckBoxDiv">
           <label className="switch">
             <input
               type="checkbox"
               name="remember"
-              id=""
+              id="check_remember"
               className="checked-inp"
             />
             <span className="slider"></span>
           </label>
+          <label htmlFor="check_remember" style={{cursor:'pointer'}}> Remind Me</label>
+          </div>
 
+          <div className='linkWrap'>
+                  <NavLink className='nnlink' to='/Login'>
+                  Forgot your password? We can help.
+                  </NavLink>
+                </div>
+          </div>
+          <div className="buttonsDiv">
+          <button type='submit' className='form-button button-fancy -black' >
+                <span className="arrow"></span>
+                <span className="text">Login</span>
+              </button>
+            <button className="blackHoverAni btnRegi">New user Registration <Icon icon="basil:edit-outline" /></button>
+          </div>
           {isKeyboardVisible && (
             <Keyboard
               keyboardRef={(r) => (keyboard.current = r)}
