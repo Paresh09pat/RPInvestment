@@ -1,0 +1,96 @@
+.main_logpass_div {
+    width: 1350px;
+    /* border: 1px solid red; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    
+}
+.outer_main{
+    /* border: 1px solid red; */
+    min-height: auto;
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+}
+.extrainfo_div {
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.Before_up {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.exinfo_ul_div {
+    font-size: 22px;
+    padding-left: 35px;
+}
+
+.pass_update_fields {
+
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.head_three_inpfields {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.common_three_inpfields {
+    /* border: 1px solid red; */
+    width: 60%;
+    position: relative;
+}
+
+.ad_width {
+    width: 100%;
+}
+
+.input-container-main {
+    /* border: 1px solid violet; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.input-container-main1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.eye_icon_ULP {
+    position: absolute;
+    right: 5%;
+    font-size: 22px;
+}
+
+.space_for_checkbox{
+    margin: 25px 0 25px 0;
+}
+
+.BtnAdjust{
+    margin-inline: auto;
+    margin-top: 25px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;position: absolute;
+}

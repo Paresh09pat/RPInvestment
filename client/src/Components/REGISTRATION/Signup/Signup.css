@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.Signup_main_div {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#Main_container_div_signup {
+    width: 810px;
+    height: 450px;
+    border-radius: 15px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.SU_head_div {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0px 0px;
+    background: #e12c6b;
+    color: white;
+    font-size: 30px;
+}
+
+.SU_second_div {
+    width: 100%;
+    height: 375px;
+    border-radius: 0px 0px 15px 15px;
+    padding: 40px 20px 40px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.form-container {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.flag-image {
+    width: 30px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background: #edeff2;
+    height: 39px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.change1 {
+    width: 15%;
+    margin-right: 2%;
+}
+
+.change2 {
+    width: 85%;
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.flad_div {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #edeff2;
+    margin-right: 2%;
+}
+
+.change4 {
+    width: 15%;
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.change5 {
+    width: 70%;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.Al_have_Acc {
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn_com_div_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+}
+
+@media screen and (min-width:501px) and (max-width:769px) {
+    #Main_container_div_signup {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:500px) {
+    #Main_container_div_signup {
+        width: 90%;
+    }
+
+    .change1,
+    .flad_div {
+        width: 25%;
+    }
+}

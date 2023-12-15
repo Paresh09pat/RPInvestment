@@ -1,0 +1,133 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: opacity 0.5s ease-in-out;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.popup-content {
+    width: 810px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    animation: flipInX 0.5s ease-in-out;
+    transform-origin: center center;
+    position: relative;
+    z-index: 99;
+    box-sizing: border-box;
+}
+
+.closing {
+    animation: flipOutX 0.5s ease-in-out;
+}
+
+.close-btn {
+    background-color: #e12c6b;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 180px;
+    height: 39px;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_sec_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+    height: 70px;
+    background: #e12c6b;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.Info_sec1 {
+    /* border: 1px solid red; */
+    height: 320px;
+    box-sizing: border-box;
+    padding: 10px 10px 0px 10px;
+}
+
+.Info_sec1_maindiv {
+    background: #f4f1f1;
+    /* border: 1px solid yellow; */
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 15px 15px 0px 15px;
+}
+
+.Info_sec2 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    height: 60px;
+}
+
+@keyframes flipInX {
+    from {
+        transform: perspective(1000px) rotateY(90deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: perspective(1000px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes flipOutX {
+    from {
+        transform: perspective(3000px) rotateY(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: perspective(3000px) rotateY(90deg);
+        opacity: 0;
+    }
+}
+
+.unorder_pdleft {
+    padding-left: 4%;
+}
+
+
+@media screen and (min-width:770px) and (max-width:1024px) {
+    .popup-content{
+        width: 75%;
+    }
+}
+@media screen and (min-width:501px) and (max-width:768px) {
+    .popup-content{
+        width: 90%;
+    }
+}
+@media screen and (min-width:280px) and (max-width:500px) {
+    .popup-content{
+        width: 94%;
+    }
+
+    .info_sec_head {
+        font-size: 22px;
+    }
+}

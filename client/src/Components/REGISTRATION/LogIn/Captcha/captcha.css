@@ -1,0 +1,43 @@
+.refresh-cap svg {
+    transition: transform 0.8s; /* Add a smooth transition for the rotation */
+  }
+  
+  .refresh-cap:hover svg {
+    transform: rotate(360deg); /* Rotate the SVG by 45 degrees on hover */
+  }
+  .captcha-div-signin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+  }
+  .captcha-img-div{
+    display: flex ;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    background-color: #eee;
+    height: 39px;
+    border-radius: 15px;
+  }
+  .inp-signin{
+    width: 100%;
+    font-size: 16px !important;
+  }
+  #captchaText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Urbanist;
+    font-size: 16px;
+    text-decoration: line-through;
+    /* Add a strikethrough effect */
+    transform: rotate(-15deg);
+    user-select: none;
+    color: black !important;
+  }
+
+  .captchRefreshIcon{
+    color: black !important;
+    font-size: 20px;
+  }

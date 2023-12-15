@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+
+.Loginpass_main_div {
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+#Main_container_div_LP {
+    width: 810px;
+    height: 450px;
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.Head_main_loginPass {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0px 0px;
+    background: #e12c6b;
+    color: white;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+#password-strength-indicator {
+    width: 80%;
+    height: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: white;
+    box-sizing: border-box;
+    margin-left: 10%;
+}
+
+#strength-bar {
+    box-sizing: border-box;
+    width: 0;
+    height: 100%;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+}
+
+.password-container {
+    /* border: 1px solid yellow; */
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 39px;
+}
+
+.input_LPS {
+    height: 100%;
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.toggle-eye-btn {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    font-size: 22px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.whole_pass_main_container {
+    /* border: 1px solid red; */
+    height: 380px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px 40px 20px;
+}
+
+.All_checkbox_comdiv {
+    /* border: 1px solid red; */
+    width: 90%;
+}
+
+.arrange{
+    padding-bottom: 15px;
+}
+
+.btn_tip_comdiv {
+    /* border: 1px solid red; */
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-icon1 {
+    width: 39px;
+    height: 39px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    right: 30%;
+}
+
+.circle-icon1:hover {
+    animation: pulse1 2s infinite;
+}
+
+@keyframes pulse1 {
+    0% {
+        box-shadow: 0 0 0 0 rgb(0 0 0 / 40%);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(198, 8, 119, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(181, 24, 71, 0);
+    }
+}
+

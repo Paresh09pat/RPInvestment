@@ -1,0 +1,141 @@
+.UpTwelve_main_div {
+    width: 1350px;
+    /* border: 1px solid red; */
+    margin-top: 25px;
+    margin-bottom: 205px;
+}
+
+.UpTwelve_sub_div_first {
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.Before_up_tw {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.exinfo_ul_div_tw {
+    font-size: 22px;
+    padding-left: 35px;
+}
+
+.UpTwelve_sub_div_second {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head_12_phrase {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.TW_update_form {
+    /* border: 1px solid violet; */
+    width: 80%;
+}
+
+.common_div_input_tw {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.tw_four_input {
+    width: 47%;
+    height: 39px;
+    border-radius: 15px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.btgap {
+    margin-bottom: 25px;
+}
+
+.tw_textarea {
+    width: 100%;
+    border-radius: 15px;
+    height: 100px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 18px;
+    resize: none;
+}
+
+.inp_btn_com_tw {
+    margin-top: 25px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.TW_custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 75%;
+}
+
+.TW_selected-option {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.TW_options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 15px;
+    background-color: #eee;
+}
+
+.TW_options .op_div:hover {
+    background-color: #e12c6b;
+    border-radius: 15px;
+    color: white;
+}
+
+.TW_options .op_div {
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.TW_options .op_div:last-child {
+    border-bottom: none;
+}
+
+.down_arr {
+    right: 5%;
+    position: absolute;
+}

@@ -1,0 +1,66 @@
+.setting_outer_div {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eee;
+    padding-top: 120px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.head_passup {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.main_setting_div {
+    /* border: 1px solid red; */
+    height: 320px;
+    width: 1350px;
+    border-radius: 15px;
+    gap: 20px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.info_main_div {
+    /* border: 1px solid red; */
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.info_sub_div {
+    /* border: 1px solid yellow; */
+    width: 50%;
+    padding-left: 40px;
+    font-size: 22px;
+}
+
+.All_btn_div {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.update_btns {
+    height: 39px;
+    width: 30%;
+    font-size: 20px;
+    background-color: #e12c6b;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
