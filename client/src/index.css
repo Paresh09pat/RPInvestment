@@ -176,6 +176,36 @@ body::-webkit-scrollbar {
   opacity: 0;
 }
 
+.input-text1 {
+  display: block;
+  border: none;
+  background: #edeff2;
+  outline: none;
+  color: black;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 15px;
+  padding-left: 15px;
+}
+
+.input-text1:last-child {
+  border-bottom: none;
+}
+
+.input-text1::-webkit-input-placeholder {
+  color: #656565;
+  transition: 0.3s ease-in;
+  transform-origin: 0 50%;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.input-text1.newani:focus::-webkit-input-placeholder {
+  transform: scale(0);
+  opacity: 0;
+}
+
 /* btn arrow animation */
 
 .button-fancy {

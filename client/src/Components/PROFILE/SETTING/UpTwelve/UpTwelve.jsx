@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
 import downArrowIcon from '@iconify-icons/bx/bxs-down-arrow';
 import "./UpTwelve.css"
+import Footer from '../../../Footer/Footer';
 
 function UpTwelve() {
 
   const [selectedOption, setSelectedOption] = useState(null);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
-  const options = ['stolen', 'forget'];
+  const options = ['Stolen', 'Forget'];
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
@@ -41,7 +42,7 @@ function UpTwelve() {
               <input className='tw_four_input' type='text' placeholder='Enter Your Aadhar Card Number . .' />
             </div>
 
-            <textarea className='tw_textarea' placeholder='Enter Your Message Here . .'></textarea>
+            <textarea className='tw_textarea input-text1 newani' placeholder='Enter Your Message Here . .'></textarea>
 
             <div className="inp_btn_com_tw">
               <div className="TW_custom-dropdown">
@@ -67,7 +68,9 @@ function UpTwelve() {
             </div>
           </form>
         </div>
+
       </div>
+        <Footer />
     </>
   )
 }

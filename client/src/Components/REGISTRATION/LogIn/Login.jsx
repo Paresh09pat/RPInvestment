@@ -117,7 +117,7 @@ function Login() {
             />
             <div className="All_cap_key_div">
               <button className="tog_btn" onClick={toggleKeyboard}>
-                <Icon icon="bi:keyboard" />
+                <Icon className="key_icon" icon="bi:keyboard" />
                 Virtual Keyboard
               </button>
             </div>

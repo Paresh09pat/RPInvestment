@@ -27,7 +27,7 @@ justify-content: center;
   width: 100%;
 }
 #Main_container_div{
-    width:810px;
+    width:900px;
     height: auto;
     padding:50px;
     /* border: 1px solid red; */
@@ -121,7 +121,6 @@ justify-content: center;
 
 .key_icon{
   font-size: 28px;
-  margin-right: 5px;
 }
 .main_remind_forgitPassDiv{
   display: flex;
@@ -133,6 +132,7 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 39px;
 }
 .buttonsDiv{
   display: flex;
