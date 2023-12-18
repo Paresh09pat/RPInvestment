@@ -62,7 +62,7 @@ const Captcha = ({ keyboard, activeInputField }) => {
           title="Refresh Captcha?"
           onClick={handleRefreshClick}
         >
-          <Icon icon="mdi:reload" className="captchRefreshIcon" />
+          <Icon icon="material-symbols:refresh" className="captchRefreshIcon" />
         </a>
       </div>
     </>

@@ -8,6 +8,7 @@ import "react-simple-keyboard/build/css/index.css";
 import Captcha from "../LogIn/Captcha/Captcha";
 import { NavLink } from "react-router-dom";
 
+
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [isKeyboardVisible, setKeyboardVisible] = useState(false);
@@ -86,7 +87,7 @@ function Login() {
             name=""
             id=""
             className="input-text newani signInInp"
-            placeholder=" Enter Email Address "
+            placeholder=" Enter Your Email Address "
             value={emailInput}
             onClick={() => setActiveField("email")}
             onChange={(e) => onChangeInput(e.target.value, "email")}
@@ -95,7 +96,7 @@ function Login() {
           <div className="passLogin-container">
             <input
               type={showPassword ? "text" : "password"}
-              placeholder="Enter Password"
+              placeholder="Enter Your Password"
               className="loginPassInp input_LPS input-text newani"
               value={passwordInput}
               onClick={() => setActiveField("password")}
@@ -115,9 +116,10 @@ function Login() {
               onClick={() => setActiveField("captcha")}
               onChange={(input) => onChangeInput(input, "captcha")}
             />
+            
             <div className="All_cap_key_div">
               <button className="tog_btn" onClick={toggleKeyboard}>
-                <Icon icon="bi:keyboard" />
+                <Icon className="key_icon" icon="bi:keyboard" />
                 Virtual Keyboard
               </button>
             </div>
@@ -134,7 +136,7 @@ function Login() {
             />
             <span className="slider"></span>
           </label>
-          <label htmlFor="check_remember" style={{cursor:'pointer'}}> Remind Me</label>
+          <label htmlFor="check_remember" style={{cursor:'pointer',fontSize:"18px"}}> Remember Me</label>
           </div>
 
           <div className='linkWrap'>
