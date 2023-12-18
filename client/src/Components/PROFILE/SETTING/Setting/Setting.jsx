@@ -22,7 +22,7 @@ function Setting() {
           <div className='info_main_div'>
             <div className='info_sub_div'>
               <ul>
-                <li>Have 8 to 12 characters 15/12</li>
+                <li>Have 8 to 12 characters </li>
                 <li>Have uppercase (Minimum 1 is mandatory)</li>
                 <li>Have lowercase (Minimum 1 is mandatory)</li>
                 <li>Have numbers (Minimum 1 is mandatory)</li>

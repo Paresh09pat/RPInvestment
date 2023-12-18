@@ -41,8 +41,6 @@ function App() {
 
   return (
     <>
-
-
      <BrowserRouter>
      <Navbar />
      <Sidebar />
@@ -82,7 +80,6 @@ function App() {
        <Route path="/Table" element={<Table />}></Route>      
        <Route path="/UpLoginPass" element={<UpLoginPass />}></Route>      
          
-
       </Routes>
     </BrowserRouter>
 

@@ -453,8 +453,8 @@ input::placeholder{
   border: none;
   cursor: pointer;
 }
-.blackHoverAni:hover{
-  animation: pulse2 2s;
+.blackHoverAni:hover, .slider:hover{
+  animation: pulse2 2s infinite;
 }
 @keyframes pulse2 {
   0% {
