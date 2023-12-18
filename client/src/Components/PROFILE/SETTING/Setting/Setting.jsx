@@ -55,7 +55,7 @@ function Setting() {
         </div>
 
         {activeComponent === 'UpLoginPass' && <UpLoginPass />}
-        {activeComponent === 'Uptranspass' && <UpTranspass />}
+        {activeComponent === 'UpTranspass' && <UpTranspass />}
         {activeComponent === 'UpTwelve' && <UpTwelve />}
 
       </div>

@@ -21,7 +21,7 @@ function UpTwelve() {
       <div className='UpTwelve_main_div'>
 
         <div className='UpTwelve_sub_div_first'>
-          <h3 className='Before_up_tw'>Before Updating 12 Phrase Password Please read instructions carefully</h3>
+          <h2 className='Before_up_tw'>Before Updating 12 Phrase Password Please read instructions carefully</h2>
           <div className='exinfo_ul_div_tw'>
             <ul>
               <li>A login password, also known as a password or passphrase.</li>

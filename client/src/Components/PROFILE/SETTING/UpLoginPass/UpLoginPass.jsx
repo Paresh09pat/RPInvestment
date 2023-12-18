@@ -101,7 +101,7 @@ function UpLoginPass() {
                 <div className='main_logpass_div'>
                     <ToastContainer />
                     <div className='extrainfo_div'>
-                        <h3 className='Before_up'>Before Updating Login Password Please read instructions carefully</h3>
+                        <h2 className='Before_up'>Before Updating Login Password Please read instructions carefully</h2>
                         <div className='exinfo_ul_div'>
                             <ul>
                                 <li>A login password, also known as a password or passphrase.</li>
