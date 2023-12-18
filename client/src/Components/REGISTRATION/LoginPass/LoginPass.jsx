@@ -5,6 +5,7 @@ import eyeOffOutline from '@iconify/icons-mdi/eye-off-outline';
 import infoIcon from '@iconify-icons/bi/info';
 import "./LoginPass.css"
 
+
 function LoginPass() {
 
     const [password, setPassword] = useState('');
@@ -94,6 +95,7 @@ function LoginPass() {
 
                 </div>
             </div>
+
         </>
     )
 }
