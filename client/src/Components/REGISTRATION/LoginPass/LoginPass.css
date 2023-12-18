@@ -39,7 +39,21 @@
     font-size: 30px;
     box-sizing: border-box;
 }
-
+.strength-container{
+    position: absolute;
+    bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 90%;
+    margin-inline: auto;
+    text-align: center;
+    left: 5%;
+}
+.strength-bar{
+   transition: width 400ms ease-in-out;
+}
 #password-strength-indicator {
     width: 80%;
     height: 5px;
