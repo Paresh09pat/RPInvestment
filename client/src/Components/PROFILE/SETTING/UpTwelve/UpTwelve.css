@@ -2,7 +2,7 @@
     width: 1350px;
     /* border: 1px solid red; */
     margin-top: 25px;
-    margin-bottom: 205px;
+    margin-bottom: 0px;
 }
 
 .UpTwelve_sub_div_first {
@@ -103,7 +103,7 @@
     border-radius: 15px;
     display: flex;
     align-items: center;
-
+    font-size: 18px;
 }
 
 .TW_options {
@@ -116,6 +116,7 @@
     border-top: none;
     border-radius: 15px;
     background-color: #eee;
+    font-size: 18px;
 }
 
 .TW_options .op_div:hover {

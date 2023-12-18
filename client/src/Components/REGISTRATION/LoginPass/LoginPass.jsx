@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Icon } from "@iconify/react";
-import eyeOutline from "@iconify/icons-mdi/eye-outline";
-import eyeOffOutline from "@iconify/icons-mdi/eye-off-outline";
-import infoIcon from "@iconify-icons/bi/info";
-import "./LoginPass.css";
+import React, { useState } from 'react';
+import { Icon } from '@iconify/react';
+import eyeOutline from '@iconify/icons-mdi/eye-outline';
+import eyeOffOutline from '@iconify/icons-mdi/eye-off-outline';
+import infoIcon from '@iconify-icons/bi/info';
+import "./LoginPass.css"
 
 function LoginPass() {
   const [password, setPassword] = useState("");
@@ -159,20 +159,16 @@ function LoginPass() {
                 <span className="text">Submit</span>
               </button>
 
-              <p className="circle-icon1">
-                <Icon
-                  icon={infoIcon}
-                  style={{ color: "black" }}
-                  width="40"
-                  height="40"
-                />
-              </p>
+                            <p className="circle-icon1" >
+                                <Icon icon={infoIcon} style={{ color: 'black' }} width="40" height="40" />
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+        </>
+    )
 }
 
 export default LoginPass;

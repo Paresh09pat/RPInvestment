@@ -80,6 +80,8 @@ function Signup() {
                   name='mobile'
                   className='form-input change5 input-text newani'
                   placeholder='Enter your mobile number'
+                  style={{borderRadius:"0 15px 15px 0"}}
+                  maxLength={10}
                 />
               </div>
             </div>
