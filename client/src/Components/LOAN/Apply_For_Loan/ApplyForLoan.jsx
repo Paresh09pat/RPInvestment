@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./ApplyForLoan.css"
 import { NavLink } from "react-router-dom"
+import Footer from "../../Footer/Footer"
 
 const ApplyForLoan = () => {
   const [monthlyPayment, setMonthlyPayment] = useState('');
@@ -38,6 +39,7 @@ const ApplyForLoan = () => {
   };
 
   return (
+   <>
     <div>
       <div id="a_mainallcarddiv">
         <div className="a_mainallcarddiv_subdiv1">
@@ -47,9 +49,13 @@ const ApplyForLoan = () => {
           <div className="a_text_and_ulmaindiv">
 
             <div id="div_for_img">
-              <NavLink to="/LoanForm">
-                loanform
+
+              <NavLink to="/LoanForm" style={{ textDecoration: "none" }}>
+                <div className="Apply_loan_btn">
+                  Apply Loan
+                </div>
               </NavLink>
+
             </div>
 
             <div id="div_for_text">
@@ -297,11 +303,10 @@ const ApplyForLoan = () => {
           </div>
         </div>
       </div>
-
-      <div style={{ marginInline: 'auto', textAlign: 'center', paddingTop: '5%', paddingBottom: '2%' }} className="newFoot">
-        © 2023 RedPhantom Investment Pvt. Ltd. All Right Reserved.
-      </div>
     </div>
+   
+   <Footer />
+   </>
   );
 };
 
