@@ -1,0 +1,42 @@
+.DN_first_main{
+    /* border: 1px solid red; */
+}
+
+.DN_Adjust_head{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.DN_NUMMail_main{
+    display: flex;
+}
+
+.DN_NUMMail_sub{
+    width: 50%;
+}
+
+.sub_div_1{
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub_div_2{
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.or{
+    margin: 25px 0px 25px 0px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.Fill_out_form{
+ margin-inline: auto;
+ width: 200px !important;
+}
