@@ -5,7 +5,7 @@ function Footer() {
   return (
    <>
    
-   <div className='footer'>© 2023 RedPhantom Investment Pvt. Ltd. All Right Reserved.</div>
+   <div className='footer'> © 2023 RedPhantom Investment Pvt. Ltd. All Right Reserved. </div>
    
    </>
   )

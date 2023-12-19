@@ -1,0 +1,152 @@
+.LF_Main_Outer{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   background-color: #eee;
+   min-height: 100vh;
+   box-sizing: border-box;
+   padding-top: 100px;
+}
+
+.LF_container {
+    /* border: 1px solid red; */
+    height: 620px;
+    width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.LF_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.head_loan_apply{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.LF_form-label {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.LF_form-input,
+.LF_form-textarea,
+.LF_form-button {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.LF_form-button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.LF_form-button:hover {
+    background-color: #45a049;
+}
+
+.LF_file-input {
+    opacity: 0;
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    cursor: pointer;
+    z-index: 1;
+}
+
+.LF_file-label {
+    /* border: 1px solid red; */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 39px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.name_fetch_div {
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    width: 70%;
+    padding-left: 15px;
+    border-radius: 15px 0 0 15px;
+}
+
+.choose_file {
+    border: none;
+    outline: none;
+    width: 30%;
+    background-color: #e12c6b;
+    color: white;
+    font-size: 18px;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.upload_icon{
+    font-size: 24px;
+}
+
+/* .choose_file:hover {
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(207, 9, 101, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(198, 8, 119, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(181, 24, 71, 0);
+    }
+} */
+
+.LF_file-label::before {
+    content: 'Choose a file';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    pointer-events: none;
+    color: #555;
+    /* Adjust color as needed */
+}
+
+.LF_file-label:hover .LF_file-input,
+.LF_file-label:focus-within .LF_file-input {
+    border-color: #4caf50;
+}
+
+.LF_file-input:valid+.LF_custom-file-label {
+    border-color: #4caf50;
+}
+
+.LF_file-input:focus+.LF_custom-file-label::before {
+    content: 'Change file';
+}

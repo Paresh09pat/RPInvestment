@@ -10,6 +10,7 @@ function Navbar() {
    <NavLink to="/EmailVerification">EmailVerification</NavLink>
    <NavLink to="/MobileVerification">MV</NavLink>
    <NavLink to="/LoginPass">LoginPass</NavLink>
+   {/* <NavLink to="/Chatbot">Chatbot</NavLink> */}
    {/* <NavLink to="/UpLoginPass">UpLoginPass</NavLink> */}
    {/* <NavLink to="/FirstPopup">FirstPopup</NavLink> */}
    {/* <NavLink to="/SecPopup">SecPopup</NavLink> */}
