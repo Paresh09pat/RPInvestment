@@ -23,7 +23,9 @@ const Captcha = ({ keyboard, activeInputField }) => {
     }
   };
 
-  const handleRefreshClick = () => {
+  const handleRefreshClick = (e) => {
+    e.preventDefault(); // Prevent the default behavior of the anchor tag
+
     const newCaptchaCode = generateCaptchaCode();
     setCaptchaCode(newCaptchaCode);
     setCaptchaInput('');
@@ -51,9 +53,9 @@ const Captcha = ({ keyboard, activeInputField }) => {
       </div>
       <div className="captcha-img-div">
         <div id="captchaText">
-          <a id="captchaCodeLink" href="#" onClick={handleRefreshClick} style={{ color: 'black' }}>
+          <p id="captchaCodeLink"  style={{ color: 'black' }}>
             <span id="captchaCodeSpan">{captchaCode}</span>
-          </a>
+          </p>
         </div>
         <a
           className="refresh-cap"

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { Icon } from '@iconify/react';
 import eyeOutline from '@iconify/icons-mdi/eye-outline';

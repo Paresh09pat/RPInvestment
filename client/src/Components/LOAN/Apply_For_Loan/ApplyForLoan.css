@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Urbanist;
+}
+
+.blackLink {
+    color: black;
+}
+
+.a_investformheadmain {
+    font-size: 22px;
+    margin-left: 3.3%;
+    padding-top: 4.7%;
+    font-weight: 100;
+}
+
+#a_mainallcarddiv {
+    width: 70%;
+    margin-inline: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    margin-top: 40px;
+    padding: 1%;
+    /*flex-direction: column;*/
+    margin-bottom: 1%;
+}
+
+.a_mainallcarddiv_subdiv1 {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+}
+
+.a_mainallcarddiv_subdiv2 {
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+.a_mainallcarddiv_subdiv2:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 90%;
+    top: 5%;
+    left: 0;
+    background-color: #00000033;
+}
+
+.a_invDetTitle {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.a_unorderlist {
+    margin-left: 10%;
+}
+
+.a_button_on_off {
+    width: 47%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(237, 239, 242, 0.50);
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+}
+
+.a_amount_head {
+    font-size: 22px;
+    text-align: center;
+    color: #34343B;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.a_comm_div_inagree {
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a_amount_first_input {
+    height: 39px;
+    width: 70%;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-color: #EDEFF2;
+    font-size: 18px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(207, 9, 101, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(198, 8, 119, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(181, 24, 71, 0);
+    }
+}
+
+.a_PLSSYPLAN {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.a_selectandagree_main {
+    width: 82%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a_text_and_ulmaindiv {
+    /*border:1px solid red;*/
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+#div_for_img {
+    border: 2px solid red;
+    height: 350px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-size: 100% 100%;
+    background-image: url("https://www.ltfs.com/images/default-source/new-banner/consumer-loan/consumer-loan-product-desktop-banner---1920px.png?sfvrsn=7caa031e_1");
+}
+
+#div_for_text {
+    /*border:1px solid red ;*/
+    height: 600px;
+    border-radius: 15px;
+    padding: 2%;
+    background: #f7f7f7;
+    overflow-y: auto;
+}
+
+.mid_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.para {
+    padding: 0%;
+    font-size: 18px;
+}
+
+.ponted_text {
+    font-size: 18px;
+    padding-left: 30px;
+    color: black;
+}
+
+.loadtexthead {
+    text-align: center;
+    margin-bottom: 20px
+}
+
+.sub_text_under {
+    padding: 0px;
+}
+
+.calculator-div {
+    width: 70%;
+    margin-inline: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+}
+
+.inner_calculator_div {
+    padding: 20px;
+    border-radius: 15px;
+    background: #f7f7f7;
+}
+
+.LC_head {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#loan-form,
+#results {
+    width: 70%;
+    margin-inline: auto;
+}
+
+.div1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 39px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.input_sec {
+    height: 100%;
+    width: 65%;
+    border-radius: 15px;
+    border: 1px solid #ddd9d9;
+    outline: none;
+    padding-left: 20px;
+    font-size: 18px;
+    background: white;
+}
+
+.lables_main {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.calculate {
+    width: 180px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background: #e12c6b;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.calculate:hover {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(207, 9, 101, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(198, 8, 119, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(181, 24, 71, 0);
+    }
+}
+
+.MONPay {
+    padding-left: 0%;
+    font-weight: 700;
+}
+
+.oth {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1441px) {
+    .a_investformheadmain {
+        font-size: 22px;
+        margin-left: 3%;
+        padding-top: 6%;
+        font-weight: 100;
+    }
+
+    #loan-form,
+    #results {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:770px) and (max-width:1025px) {
+    .a_investformheadmain {
+        font-size: 22px;
+        margin-left: 4%;
+        padding-top: 8%;
+        font-weight: 100;
+    }
+
+    #a_mainallcarddiv {
+        width: 80%;
+
+    }
+
+    .calculator-div {
+        width: 80%;
+
+    }
+
+    .input_sec {
+        width: 60%;
+    }
+
+    #loan-form,
+    #results {
+        width: 90%;
+
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:769px) {
+
+    .calculator-div {
+        width: 90%;
+    }
+
+    #loan-form,
+    #results {
+        width: 90%;
+    }
+
+    .input_sec {
+        width: 55%;
+
+    }
+
+    .a_investformheadmain {
+        font-size: 22px;
+        margin-left: 3%;
+        padding-top: 10%;
+        font-weight: 100;
+    }
+
+    #a_mainallcarddiv {
+        width: 90%;
+
+    }
+
+    #div_for_img {
+        height: 300px;
+
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:500px) {
+    .the-arrow.-right>.shaft {
+        width: 45px;
+        transition-delay: 0.2s;
+        height: 2px;
+    }
+
+
+    .calculator-div {
+        width: 86%;
+        margin-left: 11%;
+        padding: 5px;
+        margin-top: 15px;
+    }
+
+    .inner_calculator_div {
+        padding: 5px;
+
+    }
+
+    #loan-form,
+    #results {
+        width: 98%;
+
+    }
+
+    .lables_main {
+        font-size: 16px;
+    }
+
+    .input_sec {
+        width: 38%;
+        padding-left: 10px;
+    }
+
+    .a_investformheadmain {
+        font-size: 22px;
+        margin-left: 13%;
+        padding-top: 19%;
+        font-weight: 100;
+    }
+
+    #a_mainallcarddiv {
+        margin-left: 11%;
+        width: 86%;
+    }
+
+    #div_for_img {
+        height: 200px;
+    }
+}

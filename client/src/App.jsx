@@ -35,6 +35,8 @@ import FirstPop from './Components/POPUP/INPopup/FirstPop.jsx';
 import SecPopup from './Components/POPUP/OutPopup/SecPopup.jsx';
 import Table from './Sample_Of_Comp/Table.jsx';
 import UpLoginPass from './Components/PROFILE/SETTING/UpLoginPass/UpLoginPass.jsx';
+import Chatbot from './Chatbot/Chatbot.jsx';
+import LoanForm from './Components/LOAN/Apply_For_Loan/LoanForm/LoanForm.jsx';
 
 
 function App() {
@@ -79,6 +81,8 @@ function App() {
        <Route path="/SecPopup" element={<SecPopup />}></Route>      
        <Route path="/Table" element={<Table />}></Route>      
        <Route path="/UpLoginPass" element={<UpLoginPass />}></Route>      
+       {/* <Route path="/Chatbot" element={<Chatbot />}></Route>       */}
+       <Route path="/LoanForm" element={<LoanForm />}></Route>      
          
       </Routes>
     </BrowserRouter>
