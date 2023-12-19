@@ -141,7 +141,7 @@ const LoanForm = () => {
 
                         <br />
 
-                        <button type="submit" className='form-button button-fancy -black' style={{ marginInline: "auto" }} >
+                        <button type="submit" className='form-button button-fancy -black' style={{ marginInline: "auto",outline:"none" }} >
                             <span className="arrow"></span>
                             <span className="text">Submit</span>
                         </button>
