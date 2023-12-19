@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import './LoanForm.css';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Icon } from '@iconify/react';
+import './LoanForm.css';
 
 const LoanForm = () => {
     const [formData, setFormData] = useState({
@@ -21,14 +23,36 @@ const LoanForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
+
+        const emptyFields = Object.keys(formData).filter((key) => !formData[key]);
+
+        if (emptyFields.length > 0) {
+            // toast.error(`Please fill in all fields: ${emptyFields.join(', ')}`);
+            toast.error(`Please fill all fields`);
+            return;
+        }
+
+        toast.success('Form submitted successfully!');
     };
 
     const getFileInputLabel = () => {
         return formData.LF_document ? formData.LF_document.name : 'Upload Last Six Month Bank Statement';
     };
+
     return (
         <>
+            <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark" />
+
             <div className='LF_Main_Outer'>
                 <div className="LF_container">
                     <h1 className='head_loan_apply'>Loan Application Form</h1>
@@ -40,18 +64,17 @@ const LoanForm = () => {
                             value={formData.LF_firstName}
                             onChange={handleChange}
                             className="input-text newani"
-                            required
                             placeholder='Enter Your First Name . .'
                         />
 
                         <br />
+
                         <input
                             type="text"
                             name="LF_lastName"
                             value={formData.LF_lastName}
                             onChange={handleChange}
                             className="input-text newani"
-                            required
                             placeholder='Enter Your Last Name . .'
                         />
 
@@ -63,7 +86,6 @@ const LoanForm = () => {
                             value={formData.LF_email}
                             onChange={handleChange}
                             className="input-text newani"
-                            required
                             placeholder='Enter Your Email Address . .'
                         />
 
@@ -75,7 +97,6 @@ const LoanForm = () => {
                             value={formData.LF_phone}
                             onChange={handleChange}
                             className="input-text newani"
-                            required
                             maxLength={10}
                             placeholder='Enter Your Contact Number . .'
                         />
@@ -88,7 +109,6 @@ const LoanForm = () => {
                             value={formData.LF_amount}
                             onChange={handleChange}
                             className="input-text newani"
-                            required
                             placeholder='Enter Your Loan Amount . .'
                         />
 
@@ -99,35 +119,35 @@ const LoanForm = () => {
                             value={formData.LF_purpose}
                             onChange={handleChange}
                             className="input-text1 newani tw_textarea"
-                            required
                             placeholder='Reason for Apply Loan . .'
                         />
 
                         <br />
+
                         <div className="LF_file-input-container">
-                            <input
-                                type="file"
-                                name="LF_document"
-                                onChange={handleChange}
-                                className="LF_form-input LF_file-input"
-                                accept=".pdf, .doc, .docx"
-                                required
-                            />
-                            <div className="LF_file-label">
+                            <label className="LF_file-label" htmlFor="fileInput">
+                                <input
+                                    id="fileInput"
+                                    type="file"
+                                    name="LF_document"
+                                    onChange={handleChange}
+                                    className="LF_form-input LF_file-input"
+                                    accept=".pdf, .doc, .docx"
+                                />
                                 <div className='name_fetch_div'>{getFileInputLabel()}</div>
-                                <button className='choose_file'>Choose File  <Icon icon="material-symbols:upload" className='upload_icon' /></button>
-                            </div>
+                                <p className='choose_file'>Choose File  <Icon icon="material-symbols:upload" className='upload_icon' /></p>
+                            </label>
                         </div>
 
                         <br />
-                        <button className='form-button button-fancy -black' style={{marginInline:"auto"}} >
+
+                        <button type="submit" className='form-button button-fancy -black' style={{ marginInline: "auto" }} >
                             <span className="arrow"></span>
-                            <span className="text">Sign Up</span>
+                            <span className="text">Submit</span>
                         </button>
                     </form>
                 </div>
             </div>
-
         </>
     );
 };
