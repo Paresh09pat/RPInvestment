@@ -15,7 +15,16 @@ const LoanForm = () => {
         LF_document: null,
     });
 
+    const [selectedFileName, setSelectedFileName] = useState('No file chosen');
+
     const handleChange = (e) => {
+        const fileInput = e.target;
+        if (fileInput.files.length > 0) {
+                setSelectedFileName(fileInput.files[0].name);
+        } else {
+                setSelectedFileName('No file chosen');
+        }
+
         const { name, value, type, files } = e.target;
         const inputValue = type === 'file' ? files[0] : value;
         setFormData({ ...formData, [name]: inputValue });
@@ -27,7 +36,6 @@ const LoanForm = () => {
         const emptyFields = Object.keys(formData).filter((key) => !formData[key]);
 
         if (emptyFields.length > 0) {
-            // toast.error(`Please fill in all fields: ${emptyFields.join(', ')}`);
             toast.error(`Please fill all fields`);
             return;
         }
@@ -124,24 +132,26 @@ const LoanForm = () => {
 
                         <br />
 
-                        <div className="LF_file-input-container">
-                            <label className="LF_file-label" htmlFor="fileInput">
+                        <div className="SetF_file-input-container">
+                            <label className="SetF_file-label" htmlFor="fileInput">
                                 <input
                                     id="fileInput"
                                     type="file"
-                                    name="LF_document"
+                                    name="SetF_document"
                                     onChange={handleChange}
-                                    className="LF_form-input LF_file-input"
+                                    className="SetF_form-input SetF_file-input"
                                     accept=".pdf, .doc, .docx"
                                 />
-                                <div className='name_fetch_div'>{getFileInputLabel()}</div>
-                                <p className='choose_file'>Choose File  <Icon icon="material-symbols:upload" className='upload_icon' /></p>
+                                <div className="name_fetch_div_form">{selectedFileName}</div>
+                                <p className="SetF_choose_file">
+                                    Choose File <Icon icon="material-symbols:upload" className='upload_icon' />
+                                </p>
                             </label>
                         </div>
 
                         <br />
 
-                        <button type="submit" className='form-button button-fancy -black' style={{ marginInline: "auto",outline:"none" }} >
+                        <button type="submit" className='form-button button-fancy -black' style={{ marginInline: "auto", outline: "none" }} >
                             <span className="arrow"></span>
                             <span className="text">Submit</span>
                         </button>

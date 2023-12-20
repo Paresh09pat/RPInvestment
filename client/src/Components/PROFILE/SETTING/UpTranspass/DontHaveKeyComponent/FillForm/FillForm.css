@@ -1,0 +1,20 @@
+.form_container_main {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.form_inner_div {
+    width: 70%;
+}
+
+.ad_wid {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.ad_wid1 {
+    padding: 10px;
+    box-sizing: border-box;
+}
+

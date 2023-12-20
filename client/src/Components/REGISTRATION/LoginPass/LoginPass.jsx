@@ -160,16 +160,16 @@ function LoginPass() {
                 <span className="text">Submit</span>
               </button>
 
-                            <p className="circle-icon1" >
-                                <Icon icon={infoIcon} style={{ color: 'black' }} width="40" height="40" />
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
+              <p className="circle-icon1" >
+                <Icon icon={infoIcon} style={{ color: 'black' }} width="40" height="40" />
+              </p>
             </div>
-        </>
-    )
+          </div>
+
+        </div>
+      </div>
+    </>
+  )
 }
 
 export default LoginPass;

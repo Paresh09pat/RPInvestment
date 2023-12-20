@@ -74,6 +74,58 @@ function Sample() {
                 <span className="slider"></span>
             </label>
 
+
+            {/* checkbox with text hole div */}
+
+            <div className='space_for_checkbox'>
+                <ul className="pass_set_check">
+                    <li className="arrange">
+                        <input type="checkbox" id="" disabled />
+                        <label htmlFor="showPassword" className='label-info'> Let's start with at least 8 characters. The longer, the better!.</label>
+                    </li>
+                    <li className="arrange">
+                        <input type="checkbox" id="" disabled />
+                        <label htmlFor="showPassword" className='label-info'> Mix it up! A combo of at least 1 uppercase letter, 1 lowercase letter, and number.</label>
+                    </li>
+                    <li className="">
+                        <input type="checkbox" id="" disabled />
+                        <label htmlFor="showPassword" className='label-info'> Throw in a special character like @, #, $, or % to make it extra secure!</label>
+                    </li>
+                </ul>
+            </div>
+
+
+            {/* file upload comp */}
+            {/* Note : pls change "state name" for every use */}
+
+            const [selectedFileName, setSelectedFileName] = useState('No file chosen');
+
+            const handleChange = (e) => {
+    const fileInput = e.target;
+    if (fileInput.files.length > 0) {
+                setSelectedFileName(fileInput.files[0].name);
+    } else {
+                setSelectedFileName('No file chosen');
+    }
+  };
+
+            <div className="SetF_file-input-container">
+                <label className="SetF_file-label" htmlFor="fileInput">
+                    <input
+                        id="fileInput"
+                        type="file"
+                        name="SetF_document"
+                        onChange={handleChange}
+                        className="SetF_form-input SetF_file-input"
+                        accept=".pdf, .doc, .docx"
+                    />
+                    <div className="name_fetch_div_form">{selectedFileName}</div>
+                    <p className="SetF_choose_file">
+                        Choose File <Icon icon="material-symbols:upload" className='upload_icon' />
+                    </p>
+                </label>
+            </div>
+
             
         </>
     )

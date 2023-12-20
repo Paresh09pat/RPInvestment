@@ -1,7 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./DontHaveKeyComponent.css";
+import FillForm from './FillForm/FillForm';
 
 function DontHaveKeyComponent() {
+
+  const [showForm, setShowForm] = useState(false);
+
+  const handleFormButtonClick = () => {
+    setShowForm(true);
+  };
+
+  const handleFormClose = () => {
+    setShowForm(false);
+  };
+
   return (
     <>
       <div className='DN_first_main '>
@@ -39,7 +51,9 @@ function DontHaveKeyComponent() {
 
       <div className='or'>OR</div>
 
-      <buttom className="Fill_out_form form-button">Fill Out The Form</buttom>
+      <buttom className="Fill_out_form form-button" onClick={handleFormButtonClick}>Fill Out The Form</buttom>
+
+      {showForm && <FillForm onClose={handleFormClose} />}
     </>
   );
 }
