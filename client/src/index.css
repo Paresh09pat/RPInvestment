@@ -187,6 +187,7 @@ body::-webkit-scrollbar {
   font-weight: 400;
   border-radius: 15px;
   padding-left: 15px;
+  resize: none;
 }
 
 .input-text1:last-child {
@@ -478,4 +479,52 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield; 
+}
+
+/* upload file component */
+
+.SetF_file-input-container {
+  position: relative;
+  margin: 10px 0;
+}
+
+.SetF_file-label {
+  display: flex;
+  padding: 0px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.SetF_file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.name_fetch_div_form {
+  width: 75%;
+  border-radius: 15px 0 0 15px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background-color: #eee;
+}
+
+.SetF_choose_file {
+  background-color: #e12c6b;
+  color: #fff;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
