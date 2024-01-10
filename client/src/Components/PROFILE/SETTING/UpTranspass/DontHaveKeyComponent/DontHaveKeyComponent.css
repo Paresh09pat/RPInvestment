@@ -40,3 +40,11 @@
  margin-inline: auto;
  width: 200px !important;
 }
+
+.in_text_added{
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
