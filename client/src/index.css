@@ -485,7 +485,7 @@ input[type="number"] {
 
 .SetF_file-input-container {
   position: relative;
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
 
 .SetF_file-label {
