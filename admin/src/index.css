@@ -1,0 +1,13 @@
+* {
+    font-family: "Urbanist", sans-serif;
+  }
+  
+  body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  
+  body::-webkit-scrollbar {
+    width: 0px;
+  }

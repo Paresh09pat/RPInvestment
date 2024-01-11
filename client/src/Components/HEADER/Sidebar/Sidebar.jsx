@@ -1,10 +1,9 @@
-// Sidebar.js
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import './Sidebar.css'; // Create a CSS file for styling
+import './Sidebar.css';
 
 const categories = [
   {
