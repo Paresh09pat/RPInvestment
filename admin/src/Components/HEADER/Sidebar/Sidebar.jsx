@@ -90,7 +90,7 @@ const categories = [
     heading: 'INTERNAL TRANSFER FUND',
     icons: [
       { icon: "iconamoon:profile", title: 'Internal Transfer History', path: '/35' },
-     
+
     ],
   },
   {
@@ -101,7 +101,7 @@ const categories = [
       { icon: "iconamoon:profile", title: ' Rejected Deposit', path: '/38' },
       { icon: "iconamoon:profile", title: 'O-Deposit', path: '/39' },
       { icon: "iconamoon:profile", title: 'O-Deposit-History', path: '/40' },
-     
+
     ],
   },
   {
@@ -111,8 +111,8 @@ const categories = [
       { icon: "iconamoon:profile", title: 'Approved Withdrawal', path: '/42' },
       { icon: "iconamoon:profile", title: 'Rejected Withdrawal', path: '/43' },
       { icon: "iconamoon:profile", title: 'O-Withdrawal', path: '/44' },
-      { icon: "iconamoon:profile", title: 'O-Withdrawal History', path: '/45'},
-     
+      { icon: "iconamoon:profile", title: 'O-Withdrawal History', path: '/45' },
+
     ],
   },
   {
@@ -150,15 +150,27 @@ const Sidebar = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+      <div className='name_fetch'>
+        {isExpanded ? (
+          <div className='fetched_data_main'>
+            <div>Hey</div>
+            <div>Paresh Balu Patil</div>
+          </div>
+        ) : (
+          <img src="https://cdn-icons-png.flaticon.com/512/700/700674.png" alt="Non-expanded Image" className='profile_side_img' />
+        )}
+      </div>
       {categories.map((category, index) => (
-        <div key={index} className='Side_makeAlign'>
-          {isExpanded && <div className="heading">{category.heading}</div>}
+        <div key={index} className='Side_makeAlign' >
+          {isExpanded && <div className="heading" >{category.heading}</div>}
           {category.icons.map((icon, iconIndex) => (
-            <NavLink key={iconIndex} to={icon.path} className="nav-link" activeClassName="active">
+            <NavLink key={iconIndex} to={icon.path} className="nav-link" activeClassName="active" >
               <div className="icon" title={icon.title}>
+
                 <Icon className='icon_size' icon={icon.icon} color="white" />
                 {isExpanded && (
-                  <div style={{ width: "100%",overflowX:"hidden",height:"auto" }} className="icon-text">
+
+                  <div style={{ width: "100%", overflowX: "hidden", height: "auto" }} className="icon-text">
                     {icon.title}
                   </div>
                 )}

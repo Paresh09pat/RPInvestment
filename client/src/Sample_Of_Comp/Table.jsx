@@ -19,7 +19,7 @@ const Table = () => {
     };
 
     fetchData();
-  }, []); // The empty dependency array ensures the effect runs only once, like componentDidMount
+  }, []);
 
   return (
     <div className="container">
