@@ -26,14 +26,13 @@
 }
 
 .icon {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   cursor: pointer;
   display: flex;
   gap: 10px;
   align-items: center;
   opacity: 0.7;
   position: relative;
-  /* transition:  0.3s ease; */
   font-size: 20px;
   height: 39px;
   box-sizing: border-box;
@@ -49,7 +48,6 @@
 
 .icon:hover {
   background-color: #2c2c33; 
-  /* opacity: 1; */
   height: 39px;
   border-radius: 10px;
 }
@@ -109,6 +107,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #4c4c4c;
+  width: 85%;
 }
 
 .expanded .Side_makeAlign {
@@ -118,6 +118,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  border-bottom: none;
 }
 
 .expanded .nav-link.active .icon {
@@ -138,4 +139,20 @@
  font-size: 24px;
  width: 24px;
  height: 24px;
+}
+
+.name_fetch{
+  margin-bottom: 20px;
+}
+
+.fetched_data_main{
+  /* border: 1px solid red; */
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.profile_side_img{
+  width: 40px;
 }

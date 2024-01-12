@@ -18,7 +18,7 @@ const categories = [
     icons: [
       { icon: "fluent:people-add-16-regular", title: 'Add User', path: '/Adduser' },
       { icon: "tabler:user-cog", title: 'My User', path: '/Myuser' },
-      
+
     ],
   },
   {
@@ -26,7 +26,7 @@ const categories = [
     icons: [
       { icon: "solar:wallet-outline", title: 'Fund Transefer', path: '/FundTransefer' },
       { icon: "simple-line-icons:calender", title: 'Fund Transefer Records', path: '/FundTranseferRecords' },
-      
+
     ],
   },
   {
@@ -34,7 +34,7 @@ const categories = [
     icons: [
       { icon: "vaadin:money-deposit", title: 'Deposit', path: '/Deposit' },
       { icon: "ic:outline-padding", title: 'Deposit Records', path: '/DepositRecords' },
-      
+
     ],
   },
   {
@@ -42,7 +42,7 @@ const categories = [
     icons: [
       { icon: "uil:money-withdrawal", title: 'Withdrawal', path: '/Withdrawal' },
       { icon: "ic:outline-padding", title: 'Withdrawal Records', path: '/WithdrawalRecords' },
-      
+
     ],
   },
   {
@@ -50,7 +50,7 @@ const categories = [
     icons: [
       { icon: "streamline:investment-selection", title: 'Investment Form', path: '/InvestmentForm' },
       { icon: "ic:outline-padding", title: 'Investment Records', path: '/InvestmentFormRecords' },
-      
+
     ],
   },
   {
@@ -68,7 +68,7 @@ const categories = [
   {
     heading: 'LOAN',
     icons: [
-      { icon: "carbon:global-loan-and-trial", title: 'Apply For Loan', path: '/ApplyLoan' } 
+      { icon: "carbon:global-loan-and-trial", title: 'Apply For Loan', path: '/ApplyLoan' }
     ],
   },
   {
@@ -98,13 +98,25 @@ const Sidebar = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+      
+      <div className='name_fetch'>
+        {isExpanded ? (
+          <div className='fetched_data_main'>
+            <div>Hey</div>
+            <div>Paresh Balu Patil</div>
+          </div>
+        ) : (
+          <img src="https://cdn-icons-png.flaticon.com/512/700/700674.png" alt="Non-expanded Image" className='profile_side_img' />
+        )}
+      </div>
+
       {categories.map((category, index) => (
-        <div key={index} className='Side_makeAlign'>
-          {isExpanded && <div className="heading">{category.heading}</div>}
+        <div key={index} className='Side_makeAlign' >
+          {isExpanded && <div className="heading" >{category.heading}</div>}
           {category.icons.map((icon, iconIndex) => (
             <NavLink key={iconIndex} to={icon.path} className="nav-link" activeClassName="active">
               <div className="icon" title={icon.title}>
-                <Icon className='icon_size'  icon={icon.icon} color="white" />
+                <Icon className='icon_size' icon={icon.icon} color="white" />
                 {isExpanded && <span className="icon-text">{icon.title}</span>}
               </div>
             </NavLink>
