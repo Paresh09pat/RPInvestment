@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -83,6 +83,16 @@ const categories = [
 
 const Sidebar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [imageSource, setImageSource] = useState('');
+  const sidebarRef = useRef(null);
+
+  const handleToggleSidebar = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  const handleLinkClick = () => {
+    setIsExpanded(false);
+  };
 
   const handleMouseEnter = () => {
     setIsExpanded(true);
@@ -92,29 +102,77 @@ const Sidebar = () => {
     setIsExpanded(false);
   };
 
+  const handleOutsideClick = (e) => {
+    if (
+      sidebarRef.current &&
+      !sidebarRef.current.contains(e.target) &&
+      window.innerWidth >= 300 &&
+      window.innerWidth <= 500
+    ) {
+      setIsExpanded(false);
+    }
+  };
+
+  useEffect(() => {
+    const setProfileImage = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth >= 300 && screenWidth <= 500) {
+        setImageSource('./images/hanberger.png');
+      } else {
+        setImageSource('https://cdn-icons-png.flaticon.com/512/700/700674.png');
+      }
+    };
+
+    setProfileImage();
+
+    window.addEventListener('resize', setProfileImage);
+
+    return () => {
+      window.removeEventListener('resize', setProfileImage);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, []);
+
   return (
     <div
+      ref={sidebarRef}
       className={`sidebar ${isExpanded ? 'expanded' : ''}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      
-      <div className='name_fetch'>
+      <div className='name_fetch' onClick={handleToggleSidebar}>
         {isExpanded ? (
           <div className='fetched_data_main'>
-            <div>Hey</div>
+            <div style={{ color: "#e12c6b" }}>Hey</div>
             <div>Paresh Balu Patil</div>
           </div>
         ) : (
-          <img src="https://cdn-icons-png.flaticon.com/512/700/700674.png" alt="Non-expanded Image" className='profile_side_img' />
+          <img
+            src={imageSource}
+            alt="Profile Image"
+            className='profile_side_img'
+          />
         )}
       </div>
 
       {categories.map((category, index) => (
-        <div key={index} className='Side_makeAlign' >
-          {isExpanded && <div className="heading" >{category.heading}</div>}
+        <div key={index} className='Side_makeAlign'>
+          {isExpanded && <div className="heading">{category.heading}</div>}
           {category.icons.map((icon, iconIndex) => (
-            <NavLink key={iconIndex} to={icon.path} className="nav-link" activeClassName="active">
+            <NavLink
+              key={iconIndex}
+              to={icon.path}
+              className="nav-link"
+              activeClassName="active"
+              onClick={handleLinkClick}
+            >
               <div className="icon" title={icon.title}>
                 <Icon className='icon_size' icon={icon.icon} color="white" />
                 {isExpanded && <span className="icon-text">{icon.title}</span>}
