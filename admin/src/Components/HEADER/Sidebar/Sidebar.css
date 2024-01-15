@@ -1,3 +1,4 @@
+/* Sidebar.css */
 .sidebar {
     position: fixed;
     top: 0;
@@ -7,24 +8,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     transition: width 0.3s ease-out;
     box-sizing: border-box;
     color: white;
     height: 100vh;
     overflow-y: auto;
     z-index: 2;
-}
-
-.sidebar::-webkit-scrollbar {
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .sidebar::-webkit-scrollbar {
     width: 0;
-}
-
-.expanded {
+  }
+  
+  .expanded {
     width: 270px;
-}
-
-.icon {
+  }
+  
+  .icon {
     margin-bottom: 10px;
     cursor: pointer;
     display: flex;
@@ -36,35 +38,36 @@
     min-height: 39px;
     box-sizing: border-box;
     opacity: 1;
-    padding: 7px 0 7px 0;
-}
-
-.expanded .icon {
+  }
+  
+  .expanded .icon {
     flex-direction: row;
     width: 100%;
     justify-content: flex-start;
-    padding: 0 5px 5px 10px;
-}
-
-.icon:hover {
+    padding-left: 10px;
+    min-height: 39px;
+    padding-bottom:5px ;
+    box-sizing: border-box;
+  }
+  
+  .icon:hover {
     background-color: #2c2c33;
     min-height: 39px;
     border-radius: 10px;
-}
-
-.icon-text {
-    display: none;
+  }
+  
+  .icon-text {
     margin-top: 5px;
     color: white;
     font-size: 18px;
-}
-
-.sidebar:hover .icon-text {
+  }
+  
+  .sidebar:hover .icon-text {
     display: block;
     color: white;
-}
-
-.nav-link {
+  }
+  
+  .nav-link {
     text-decoration: none;
     position: relative;
     width: 100%;
@@ -72,9 +75,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.nav-link.active .icon {
+  }
+  
+  .nav-link.active .icon {
     background-color: #e12c6b;
     color: white;
     width: 90%;
@@ -84,9 +87,9 @@
     align-items: center;
     border-radius: 10px;
     min-height: 39px;
-}
-
-.nav-link.active .icon::before {
+  }
+  
+  .nav-link.active .icon::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -94,14 +97,14 @@
     background-color: transparent;
     bottom: 0;
     left: 0;
-}
-
-.sidebar:hover .icon-text {
+  }
+  
+  .sidebar:hover .icon-text {
     display: block;
     color: white;
-}
-
-.Side_makeAlign {
+  }
+  
+  .Side_makeAlign {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -109,25 +112,10 @@
     align-items: center;
     border-bottom: 1px solid #4c4c4c;
     width: 85%;
-}
-
-.name_fetch{
-    margin-bottom: 20px;
-}
-
-.fetched_data_main{
-    /* border: 1px solid red; */
-    width: 100%;
-    text-align: center;
-    line-height: 30px;
-    font-size: 18px;
-}
-
-.profile_side_img{
-    width: 40px;
-}
-
-.expanded .Side_makeAlign {
+    margin-bottom: 10px;
+  }
+  
+  .expanded .Side_makeAlign {
     box-sizing: border-box;
     width: 94%;
     display: flex;
@@ -135,24 +123,91 @@
     justify-content: center;
     align-items: start;
     border-bottom: none;
-}
-
-.expanded .nav-link.active .icon {
+  }
+  
+  .expanded .nav-link.active .icon {
     box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: start;
-}
-
-.heading {
+  }
+  
+  .heading {
     color: #e12c6b;
     margin-bottom: 5px;
     padding-left: 10px;
-}
-
-.icon_size {
+  }
+  
+  .icon_size {
     font-size: 24px;
     width: 24px;
     height: 24px;
-}
+  }
+  
+  .name_fetch {
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .fetched_data_main {
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  
+  .profile_side_img {
+    width: 40px;
+  }
+  
+  @media screen and (min-width:280px) and (max-width:376px) {
+    .sidebar {
+      width: 15%;
+    }
+  
+    .expanded {
+      width: 80%;
+    }
+  
+    .icon_size {
+      font-size: 22px;
+      width: 20px;
+      height: 22px;
+    }
+  
+    .icon-text {
+      display: block;
+      margin-top: 5px;
+      color: white;
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (min-width:376px) and (max-width:500px) {
+  
+    .sidebar {
+      width: 13%;
+    }
+  
+    .expanded {
+      width: 70%;
+    }
+  
+    .icon_size {
+      font-size: 22px;
+      width: 20px;
+      height: 22px;
+    }
+  
+    .icon-text {
+      display: block;
+      margin-top: 5px;
+      color: white;
+      font-size: 18px;
+    }
+  }
