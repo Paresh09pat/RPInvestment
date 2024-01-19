@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Icon } from '@iconify/react';
-
 import './Sidebar.css';
 
 const categories = [
@@ -202,7 +201,7 @@ const Sidebar = () => {
       <div className='name_fetch' onClick={handleToggleSidebar}>
         {isExpanded ? (
           <div className='fetched_data_main'>
-            <div style={{color:"#e12c6b"}}>Hey</div>
+            <div style={{ color: "#e12c6b" }}>Hey</div>
             <div>Paresh Balu Patil</div>
           </div>
         ) : (
