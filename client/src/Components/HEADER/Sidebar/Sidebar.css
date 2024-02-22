@@ -146,11 +146,16 @@
 }
 
 .name_fetch {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   /* border: 1px solid red; */
   width: 100%;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  position: sticky;
+  z-index: 1;
+  background-color: #1e1e24;
+  top: 0;
 }
 
 .fetched_data_main {

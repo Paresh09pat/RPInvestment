@@ -18,15 +18,17 @@ const LoanForm = () => {
     const [selectedFileName, setSelectedFileName] = useState('No file chosen');
 
     const handleChange = (e) => {
-        const fileInput = e.target;
-        if (fileInput.files.length > 0) {
-                setSelectedFileName(fileInput.files[0].name);
-        } else {
-                setSelectedFileName('No file chosen');
-        }
-
         const { name, value, type, files } = e.target;
         const inputValue = type === 'file' ? files[0] : value;
+
+        if (type === 'file') {
+            if (files.length > 0) {
+                setSelectedFileName(files[0].name);
+            } else {
+                setSelectedFileName('No file chosen');
+            }
+        }
+
         setFormData({ ...formData, [name]: inputValue });
     };
 
@@ -137,7 +139,7 @@ const LoanForm = () => {
                                 <input
                                     id="fileInput"
                                     type="file"
-                                    name="SetF_document"
+                                    name="LF_document"
                                     onChange={handleChange}
                                     className="SetF_form-input SetF_file-input"
                                     accept=".pdf, .doc, .docx"
