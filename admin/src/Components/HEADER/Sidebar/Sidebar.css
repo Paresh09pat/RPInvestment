@@ -151,6 +151,10 @@
     width: 100%;
     text-align: center;
     padding-top: 20px;
+    position: sticky;
+    z-index: 1;
+    background-color: #1e1e24;
+    top: 0;
   }
   
   .fetched_data_main {
