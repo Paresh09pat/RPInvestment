@@ -20,11 +20,15 @@
 .LF_form {
     display: flex;
     flex-direction: column;
+    width: 90%;
+    margin-inline: auto;
 }
 
-.head_loan_apply{
+.head_loan_apply {
     text-align: center;
     margin-bottom: 20px;
+    width: 90%;
+    margin-inline: auto;
 }
 
 .LF_form-label {

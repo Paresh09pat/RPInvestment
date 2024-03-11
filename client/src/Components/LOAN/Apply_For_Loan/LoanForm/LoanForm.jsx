@@ -142,7 +142,7 @@ const LoanForm = () => {
                                     name="LF_document"
                                     onChange={handleChange}
                                     className="SetF_form-input SetF_file-input"
-                                    accept=".pdf, .doc, .docx"
+                                    accept=".jpg, .jpeg, .png, .gif, .pdf"
                                 />
                                 <div className="name_fetch_div_form">{selectedFileName}</div>
                                 <p className="SetF_choose_file">

@@ -1,45 +1,48 @@
-*{
-padding:0;
-margin: 0;
-border-radius: 0;
+* {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
 }
 
 
-.Log_main_div{
+.Log_main_div {
   width: 100%;
   height: 100vh;
-/* border: 1px solid red; */
-display: flex;
-align-items: center;
-background-color: black;
-justify-content: center;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
 
 }
 
-.passLogin-container{
+.passLogin-container {
   width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.loginPassInp{
+
+.loginPassInp {
   width: 100%;
 }
-#Main_container_div{
-    width:900px;
-    height: auto;
-    padding:50px;
-    /* border: 1px solid red; */
-    border-radius: 15px;
-    background-color: white;
-    position: relative;
 
+#Main_container_div {
+  width: 900px;
+  height: auto;
+  padding: 50px;
+  /* border: 1px solid red; */
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
 }
-.avatar-icon-signin{
+
+.avatar-icon-signin {
   position: absolute;
 }
-.innerDivLoginPage{
+
+.innerDivLoginPage {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -50,19 +53,23 @@ justify-content: center;
   gap: 25px;
   padding: 10px;
 }
-.capKEyboard-mainDiv{
+
+.capKEyboard-mainDiv {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .avatar-icon-signin {
   position: absolute;
   top: -12%;
   border-radius: 50%;
   width: 118px;
-  box-sizing: border-box; /* Include padding in the element's total width */
-  padding: 4.5px; /* Adjust padding to control the border width */
+  box-sizing: border-box;
+  /* Include padding in the element's total width */
+  padding: 4.5px;
+  /* Adjust padding to control the border width */
   animation: animatedGradientBorder 5s linear infinite;
 }
 
@@ -75,6 +82,7 @@ justify-content: center;
   z-index: -1;
   animation: inherit;
 }
+
 .avatar-icon-signin::after {
   content: "";
   border-radius: 50%;
@@ -87,7 +95,8 @@ justify-content: center;
   z-index: -1;
   animation: inherit;
 }
-.Head_main_login{
+
+.Head_main_login {
   width: 100%;
   height: 75px;
   display: flex;
@@ -99,14 +108,16 @@ justify-content: center;
   font-size: 30px;
 }
 
-.signInInp{
+.signInInp {
   width: 100%;
   margin-top: 20px;
 }
-.All_cap_key_div{
+
+.All_cap_key_div {
   width: 30%;
 }
-.tog_btn{
+
+.tog_btn {
   width: 100%;
   border: none;
   border-radius: 15px;
@@ -119,1352 +130,1263 @@ justify-content: center;
   cursor: pointer;
 }
 
-.key_icon{
+.key_icon {
   font-size: 28px;
 }
-.main_remind_forgitPassDiv{
+
+.main_remind_forgitPassDiv {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
-.remindMecheckBoxDiv{
+
+.remindMecheckBoxDiv {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 39px;
 }
-.buttonsDiv{
+
+.buttonsDiv {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
-.btnRegi{
-  height: 39px ;
-  width: 50%;
+
+.btnRegi {
+  height: 39px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
 }
 
+.btntry {
+  width: 50%;
+
+}
 
 /* avatar img border_gradient */
 @keyframes animatedGradientBorder {
   0% {
-    background-image: linear-gradient(
-      0deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(0deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   1% {
-    background-image: linear-gradient(
-      3.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(3.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   2% {
-    background-image: linear-gradient(
-      7.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(7.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   3% {
-    background-image: linear-gradient(
-      10.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(10.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   4% {
-    background-image: linear-gradient(
-      14.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(14.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   5% {
-    background-image: linear-gradient(
-      18deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(18deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   6% {
-    background-image: linear-gradient(
-      21.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(21.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   7% {
-    background-image: linear-gradient(
-      25.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(25.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   8% {
-    background-image: linear-gradient(
-      28.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(28.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   9% {
-    background-image: linear-gradient(
-      32.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(32.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   10% {
-    background-image: linear-gradient(
-      36deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(36deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   11% {
-    background-image: linear-gradient(
-      39.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(39.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   12% {
-    background-image: linear-gradient(
-      43.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(43.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   13% {
-    background-image: linear-gradient(
-      46.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(46.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   14% {
-    background-image: linear-gradient(
-      50.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(50.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   15% {
-    background-image: linear-gradient(
-      54deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(54deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   16% {
-    background-image: linear-gradient(
-      57.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(57.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   17% {
-    background-image: linear-gradient(
-      61.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(61.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   18% {
-    background-image: linear-gradient(
-      64.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(64.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   19% {
-    background-image: linear-gradient(
-      68.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(68.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   20% {
-    background-image: linear-gradient(
-      72deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(72deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   21% {
-    background-image: linear-gradient(
-      75.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(75.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   22% {
-    background-image: linear-gradient(
-      79.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(79.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   23% {
-    background-image: linear-gradient(
-      82.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(82.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   24% {
-    background-image: linear-gradient(
-      86.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(86.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   25% {
-    background-image: linear-gradient(
-      90deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(90deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   26% {
-    background-image: linear-gradient(
-      93.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(93.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   27% {
-    background-image: linear-gradient(
-      97.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(97.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   28% {
-    background-image: linear-gradient(
-      100.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(100.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   29% {
-    background-image: linear-gradient(
-      104.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(104.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   30% {
-    background-image: linear-gradient(
-      108deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(108deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   31% {
-    background-image: linear-gradient(
-      111.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(111.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   32% {
-    background-image: linear-gradient(
-      115.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(115.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   33% {
-    background-image: linear-gradient(
-      118.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(118.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   34% {
-    background-image: linear-gradient(
-      122.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(122.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   35% {
-    background-image: linear-gradient(
-      126deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(126deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   36% {
-    background-image: linear-gradient(
-      129.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(129.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   37% {
-    background-image: linear-gradient(
-      133.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(133.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   38% {
-    background-image: linear-gradient(
-      136.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(136.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   39% {
-    background-image: linear-gradient(
-      140.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(140.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   40% {
-    background-image: linear-gradient(
-      144deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(144deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   41% {
-    background-image: linear-gradient(
-      147.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(147.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   42% {
-    background-image: linear-gradient(
-      151.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(151.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   43% {
-    background-image: linear-gradient(
-      154.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(154.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   44% {
-    background-image: linear-gradient(
-      158.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(158.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   45% {
-    background-image: linear-gradient(
-      162deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(162deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   46% {
-    background-image: linear-gradient(
-      165.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(165.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   47% {
-    background-image: linear-gradient(
-      169.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(169.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   48% {
-    background-image: linear-gradient(
-      172.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(172.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   49% {
-    background-image: linear-gradient(
-      176.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(176.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   50% {
-    background-image: linear-gradient(
-      180deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(180deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   51% {
-    background-image: linear-gradient(
-      183.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(183.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   52% {
-    background-image: linear-gradient(
-      187.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(187.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   53% {
-    background-image: linear-gradient(
-      190.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(190.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   54% {
-    background-image: linear-gradient(
-      194.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(194.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   55% {
-    background-image: linear-gradient(
-      198deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(198deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   56% {
-    background-image: linear-gradient(
-      201.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(201.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   57% {
-    background-image: linear-gradient(
-      205.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(205.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   58% {
-    background-image: linear-gradient(
-      208.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(208.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   59% {
-    background-image: linear-gradient(
-      212.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(212.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   60% {
-    background-image: linear-gradient(
-      216deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(216deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   61% {
-    background-image: linear-gradient(
-      219.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(219.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   62% {
-    background-image: linear-gradient(
-      223.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(223.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   63% {
-    background-image: linear-gradient(
-      226.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(226.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   64% {
-    background-image: linear-gradient(
-      230.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(230.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   65% {
-    background-image: linear-gradient(
-      234deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(234deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   66% {
-    background-image: linear-gradient(
-      237.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(237.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   67% {
-    background-image: linear-gradient(
-      241.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(241.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   68% {
-    background-image: linear-gradient(
-      244.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(244.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   69% {
-    background-image: linear-gradient(
-      248.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(248.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   70% {
-    background-image: linear-gradient(
-      252deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(252deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   71% {
-    background-image: linear-gradient(
-      255.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(255.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   72% {
-    background-image: linear-gradient(
-      259.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(259.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   73% {
-    background-image: linear-gradient(
-      262.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(262.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   74% {
-    background-image: linear-gradient(
-      266.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(266.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   75% {
-    background-image: linear-gradient(
-      270deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(270deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   76% {
-    background-image: linear-gradient(
-      273.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(273.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   77% {
-    background-image: linear-gradient(
-      277.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(277.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   78% {
-    background-image: linear-gradient(
-      280.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(280.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   79% {
-    background-image: linear-gradient(
-      284.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(284.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   80% {
-    background-image: linear-gradient(
-      288deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(288deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   81% {
-    background-image: linear-gradient(
-      291.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(291.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   82% {
-    background-image: linear-gradient(
-      295.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(295.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   83% {
-    background-image: linear-gradient(
-      298.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(298.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   84% {
-    background-image: linear-gradient(
-      302.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(302.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   85% {
-    background-image: linear-gradient(
-      306deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(306deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   86% {
-    background-image: linear-gradient(
-      309.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(309.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   87% {
-    background-image: linear-gradient(
-      313.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(313.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   88% {
-    background-image: linear-gradient(
-      316.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(316.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   89% {
-    background-image: linear-gradient(
-      320.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(320.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   90% {
-    background-image: linear-gradient(
-      324deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(324deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   91% {
-    background-image: linear-gradient(
-      327.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(327.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   92% {
-    background-image: linear-gradient(
-      331.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(331.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   93% {
-    background-image: linear-gradient(
-      334.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(334.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   94% {
-    background-image: linear-gradient(
-      338.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(338.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   95% {
-    background-image: linear-gradient(
-      342deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(342deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   96% {
-    background-image: linear-gradient(
-      345.6deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(345.6deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   97% {
-    background-image: linear-gradient(
-      349.2deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(349.2deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   98% {
-    background-image: linear-gradient(
-      352.8deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(352.8deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   99% {
-    background-image: linear-gradient(
-      356.4deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(356.4deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
+
   100% {
-    background-image: linear-gradient(
-      360deg,
-      #d72d6c,
-      #e225bf,
-      #bc4eef,
-      #a963eb,
-      #5073b8,
-      #6e10ad,
-      #632cb6,
-      #2f84da
-    );
+    background-image: linear-gradient(360deg,
+        #d72d6c,
+        #e225bf,
+        #bc4eef,
+        #a963eb,
+        #5073b8,
+        #6e10ad,
+        #632cb6,
+        #2f84da);
   }
 }
 
 @media screen and (max-width: 768px) {
-  .capKEyboard-mainDiv, .main_remind_forgitPassDiv{
+
+  .capKEyboard-mainDiv,
+  .main_remind_forgitPassDiv {
     flex-direction: column;
   }
 }
