@@ -54,7 +54,7 @@ function Login() {
     if (keyboard.current) {
       const currentLayout = keyboard.current.options.layoutName;
       const newLayout = currentLayout === "default" ? "shift" : "default";
-    
+
       keyboard.current.setOptions({
         layoutName: newLayout,
       });
@@ -65,7 +65,7 @@ function Login() {
     if (keyboard.current) {
       const currentLayout = keyboard.current.options.layoutName;
       const newLayout = currentLayout === "default" ? "shift" : "default";
-    
+
       keyboard.current.setOptions({
         layoutName: newLayout,
       });
@@ -77,7 +77,7 @@ function Login() {
       <div id="Main_container_div">
         <div className="innerDivLoginPage">
           <img
-            src="https://assetduniya.com/assets/img/image%206.png"
+            src="https://th.bing.com/th/id/OIP.fko4E3j-Qy3RG74_puTHMwHaHa?w=219&h=219&c=7&r=0&o=5&pid=1.7"
             alt=""
             className="avatar-icon-signin"
           />
@@ -116,7 +116,7 @@ function Login() {
               onClick={() => setActiveField("captcha")}
               onChange={(input) => onChangeInput(input, "captcha")}
             />
-            
+
             <div className="All_cap_key_div">
               <button className="tog_btn" onClick={toggleKeyboard}>
                 <Icon className="key_icon" icon="bi:keyboard" />
@@ -127,30 +127,33 @@ function Login() {
 
           <div className="main_remind_forgitPassDiv">
             <div className="remindMecheckBoxDiv">
-          <label className="switch">
-            <input
-              type="checkbox"
-              name="remember"
-              id="check_remember"
-              className="checked-inp"
-            />
-            <span className="slider"></span>
-          </label>
-          <label htmlFor="check_remember" style={{cursor:'pointer',fontSize:"18px"}}> Remember Me</label>
-          </div>
+              <label className="switch">
+                <input
+                  type="checkbox"
+                  name="remember"
+                  id="check_remember"
+                  className="checked-inp"
+                />
+                <span className="slider"></span>
+              </label>
+              <label htmlFor="check_remember" style={{ cursor: 'pointer', fontSize: "18px" }}> Remember Me</label>
+            </div>
 
-          <div className='linkWrap'>
-                  <NavLink className='nnlink' to='/Login'>
-                  Forgot your password? We can help.
-                  </NavLink>
-                </div>
+            <div className='linkWrap'>
+              <NavLink className='nnlink' to='/Login'>
+                Forgot your password? We can help.
+              </NavLink>
+            </div>
           </div>
           <div className="buttonsDiv">
-          <button type='submit' className='form-button button-fancy -black' >
-                <span className="arrow"></span>
-                <span className="text">Login</span>
-              </button>
-            <button className="blackHoverAni btnRegi">New user Registration <Icon icon="basil:edit-outline" /></button>
+            <button type='submit' className='form-button button-fancy -black' >
+              <span className="arrow"></span>
+              <span className="text">Login</span>
+            </button>
+
+            <NavLink to='/Signup' className=" btnRegi">
+              <button className="blackHoverAni btntry">New user Registration <Icon icon="basil:edit-outline" /></button>
+            </NavLink>
           </div>
           {isKeyboardVisible && (
             <Keyboard
