@@ -5,12 +5,14 @@ import eyeOutline from '@iconify/icons-mdi/eye-outline';
 import eyeOffOutline from '@iconify/icons-mdi/eye-off-outline';
 import infoIcon from '@iconify-icons/bi/info';
 import "./LoginPass.css"
+import LP_tooltip from "./LP_tooltil"
 
 function LoginPass() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
   const [requirementsMet, setRequirementsMet] = useState({
     length: false,
     upperLowerNum: false,
@@ -56,6 +58,10 @@ function LoginPass() {
       default:
         return { width: "0%", background: "transparent" };
     }
+  };
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
   };
 
   const strengthBarStyle = calculateStrengthBar();
@@ -160,12 +166,12 @@ function LoginPass() {
                 <span className="text">Submit</span>
               </button>
 
-              <p className="circle-icon1" >
+              <p className="circle-icon1" onClick={togglePopup}>
                 <Icon icon={infoIcon} style={{ color: 'black' }} width="40" height="40" />
               </p>
             </div>
           </div>
-
+          {showPopup && <LP_tooltip onClose={togglePopup} />}
         </div>
       </div>
     </>
